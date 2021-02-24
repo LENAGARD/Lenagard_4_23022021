@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: "https://lenagard.github.io/chouette_agence/sitemap.xml"
