@@ -1,173 +1,329 @@
-<!doctype html>
-<html lang="Default">
-<head>
-    <meta charset="utf-8">
-	<meta name="description" content="Agence de création et refonte design web situé à Lyon. Nous assurons un design et une visibilité de qualité professionnelle à vos sites internet.">
-    <meta name="robots" content="index, follow">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <link rel="shortcut icon" type="image/png" href="favicon.jpg">
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
-	
-    
-	<script src="./js/jquery-2.1.0.min.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
-	<script src="./js/blocs.min.js"></script>
-	<script src="./js/jqBootstrapValidation.js"></script>
-	<script src="./js/formHandler.js"></script>
-    <title>page2</title>
-    
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8NTXZLEXK4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<!DOCTYPE html>
+<!-- Accessibility - Lang default ! -->
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <!-- Short description of the document -->
+    <meta
+      name="description"
+      content="Agence Web basée à Lyon – La chouette agence est une agence de webdesign qui aide les entreprises à devenir attractives et visibles sur internet."
+    />
+    <!-- Control the behavior of search engine crawling and indexing -->
+    <meta name="robots" content="index, follow" />
+    <!-- Helps prevent duplicate content issues -->
+    <link
+      href="https://lenagard.github.io/chouette_agence/contact.html"
+      rel="canonical"
+    />
 
-  gtag('config', 'G-8NTXZLEXK4');
-</script>
-<!-- Analytics END -->
-    
-</head>
-<body>
-<!-- Principal conteneur -->
-<div class="page-container">
-    
-<!-- bloc-0 -->
-<div class="bloc bgc-white l-bloc " id="bloc-0">
-	<div class="container bloc-sm">
-		<nav class="navbar row">
-			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html"><img src="img/la-chouette-agence.png" alt="atlanta web design logo" height="40" /></a>
-				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
-					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-				</button>
-			</div>
-			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
-				<ul class="site-navigation nav navbar-nav">
-					<li>
-						<a href="index.html">Accueil</a>
-					</li>
-					<li>
-					</li>
-					<li>
-						<a href="page2.html">page2 &gt;</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</div>
-</div>
-<!-- bloc-0 END -->
+    <!-- schemaorg using microdata for SEO <schema.org> -->
+    <link
+      rel="author"
+      href="https://lenagard.github.io.github.io/chouette_agence/contact.html"
+    />
+    <link
+      rel="publisher"
+      href="https://lenagard.github.io/chouette_agence/index.html"
+    />
+    <meta itemprop="name" content="La chouette agence" />
+    <meta
+      itemprop="description"
+      content="Agence Web basée à Lyon – La chouette agence est une agence de webdesign qui aide les entreprises à devenir attractives et visibles sur internet."
+    />
+    <meta
+      itemprop="image"
+      content="https://lenagard.github.io/chouette_agence/img/la-chouette-agence.png"
+    />
 
-<!-- bloc-6 -->
-<div class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper" id="bloc-6">
-	<div class="container bloc-lg">
-		<div class="row">
-			<div class="col-sm-12">
-				<h1 class="text-center hero-bloc-text tc-white">
-					Parlons web design !
-				</h1>
-				<p class="text-center mg-lg tc-white tight-width-whitespace">
-					Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
-					Parlez-nous de votre projet en complétant le formulaire ci-dessous.
-				</p>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-6 END -->
+    <!-- SEO - Open Graph -->
+    <meta
+      property="og:title"
+      content="Contact – La chouette agence – webdesign basée à Lyon"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://lenagard.github.io/chouette_agence/index.html"
+    />
+    <meta
+      property="og:image"
+      content="https://lenagard.github.io/chouette_agence/img/la-chouette-agence.png"
+    />
+    <meta
+      property="og:image:alt"
+      content="La chouette agence - identité en image"
+    />
+    <meta
+      property="og:description"
+      content="Agence Web basée à Lyon – La chouette agence est une agence de webdesign qui aide les entreprises à devenir attractives et visibles sur internet."
+    />
+    <meta property="og:site_name" content="La chouette agence" />
+    <meta property="og:local" content="fr_FR" />
 
-<!-- bloc-7 -->
-<div class="bloc bgc-white l-bloc" id="bloc-7">
-	<div class="container bloc-lg">
-		<div class="row">
-			<div class="col-sm-6">
-				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
-					<div class="form-group">
-						<label>
-							Nom
-						</label>
-						<input id="name" class="form-control" required />
-					</div>
-					<div class="form-group">
-						<label>
-							Adresse email
-						</label>
-						<input id="email" class="form-control" type="email" required />
-					</div>
-					<div class="form-group">
-						<label>
-							Comment nous avez-vous connu ?
-						</label>
-						<input class="form-control" type="email" required id="input_504" />
-					</div>
-					<div class="form-group">
-						<label>
-							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
-					</div> 
-					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
-						Envoyer
-					</button>
-				</form>
-			</div>
-			<div class="col-sm-6">
-				<p>
-					contact@lachouetteagence.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
-				</p>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- bloc-7 END -->
+    <!-- Best Practices - favicon.ico ! -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 
-<!-- ScrollToTop Button -->
-<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
-<!-- ScrollToTop Button END-->
+    <!-- Performance - minify CSS - fontawesome removed !!!!!!!!!!!!!!!!!! todo !!!!!!!!!!!!!!!!!!!!!!!!! -->
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css" /> -->
+    <link rel="stylesheet" type="text/css" href="./css/et-line.min.css" />
 
+    <!-- Performance - minify js + defer - !!!!!!!!!!!!!!!! todo !!!!!!!!!!!!!!!! -->
+    <script defer src="./js/jquery-2.1.0.js"></script>
+    <script defer src="./js/bootstrap.js"></script>
+    <script defer src="./js/blocs.js"></script>
+    <script defer src="./js/jqBootstrapValidation.js"></script>
+    <script defer src="./js/formHandler.js"></script>
 
-<!-- Footer - bloc-8 -->
-<div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
-	<div class="container bloc-sm">
-		<div class="row">
-			<div class="col-sm-12">
-				<p class="text-center white">
-					La chouette agence - Agence web basée à Lyon.<br>
-				</p>
-				<div class="row row-no-gutters social">
-					<div class="col-sm-3">
-						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-<!-- Footer - bloc-8 END -->
+    <!-- Set the document title -->
+    <title>Contact – La chouette agence – webdesign basée à Lyon</title>
 
-</div>
-<!-- Principal conteneur END -->
-    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-8NTXZLEXK4"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-</body>
+      gtag("config", "G-8NTXZLEXK4");
+    </script>
+    <!-- Analytics END -->
+
+    <!-- fontawesome link -->
+    <link
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Principal conteneur -->
+    <!-- HTML balise change -->
+    <main class="page-container">
+      <!-- bloc-0 -->
+	  <!--  Accessibility - aria-label added -->
+      <header class="bloc bgc-white l-bloc" id="bloc-0" aria-label="primary">
+        <div class="container bloc-sm">
+          <!-- Accessibility – text change in alt -->
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html"
+              ><img
+                src="img/la-chouette-agence.png"
+                alt="Logo de la chouette agence"
+                height="40"
+            /></a>
+      	    <!--  Accessibility - aria-label added -->
+            <button
+              id="nav-toggle"
+              type="button"
+              class="ui-navbar-toggle navbar-toggle"
+              data-toggle="collapse"
+              data-target=".navbar-1"
+			  aria-label="menu"
+            >
+              <span class="sr-only">Toggle navigation</span
+              ><span class="icon-bar"></span><span class="icon-bar"></span
+              ><span class="icon-bar"></span>
+            </button>
+          </div>
+          <nav class="navbar row">
+            <div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
+              <ul class="site-navigation nav navbar-nav">
+                <li>
+                  <a href="index.html">Accueil</a>
+                </li>
+                <li></li>
+                <li>
+                  <!-- SEO - url contact -->
+                  <a href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <!-- bloc-0 END -->
+
+      <!-- bloc-6 -->
+      <!-- HTML balise change -->
+      <section
+        class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper"
+        id="bloc-6"
+      >
+        <div class="container bloc-lg">
+          <div class="row">
+            <div class="col-sm-12">
+              <h1 class="text-center hero-bloc-text tc-white">
+                Parlons web design !
+              </h1>
+              <!-- HTML balise change -->
+              <h2 class="text-center mg-lg tc-white tight-width-whitespace">
+                Nous sommes ravis que vous souhaitiez collaborer avec notre
+                agence.<br />
+                Parlez-nous de votre projet en complétant le formulaire
+                ci-dessous.
+              </h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- bloc-6 END -->
+
+      <!-- bloc-7 -->
+      <!-- HTML balise change -->
+      <section class="bloc bgc-white l-bloc" id="bloc-7">
+        <div class="container bloc-lg">
+          <div class="row">
+            <div class="col-sm-6">
+              <form
+                id="form_1"
+                novalidate
+                success-msg="Votre message a été envoyé."
+                fail-msg="Désolé il semblerait que notre serveur mail ne réponde pas, désolé pour cet inconvénient!"
+              >
+                <div class="form-group">
+                  <!-- Accessibility – attribut "for" added - Placeholder added - Autofocus added -->
+                  <label for="name">Nom</label>
+                  <input
+                    id="name"
+                    class="form-control"
+                    required
+                    placeholder="Nom requis"
+                    autofocus
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">Adresse email</label>
+                  <input
+                    id="email"
+                    class="form-control"
+                    type="email"
+                    required
+                    placeholder="Email requis"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="info"> Comment nous avez-vous connu ? </label>
+                  <input
+                    class="form-control"
+                    type="email"
+                    required
+                    id="info"
+                    placeholder="Information requise"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="message">
+                    Brief de votre projet (Ajoutez autant de détails que
+                    nécessaire)<br /> </label
+                  ><textarea
+                    id="message"
+                    class="form-control"
+                    rows="4"
+                    cols="50"
+                    required
+                    placeholder="Message requis"
+                  ></textarea>
+                </div>
+                <button
+                  class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine"
+                  type="submit"
+                >
+                  Envoyer
+                </button>
+              </form>
+            </div>
+            <div class="col-sm-6">
+              <!-- Accessibility - adress balise - mailto to click direclty on email -->
+              <address class="col-sm-12 text-center contact-list">
+                <ul>
+                  <li>
+                    <a href="mailto:contact@lachouetteagence.com"
+                      >contact@lachouetteagence.com</a
+                    >
+                  </li>
+                  <li>2 place Sathonay 69001 Lyon</li>
+                  <li>Ouvert de 9h à 18h, du lundi au vendredi</li>
+                </ul>
+              </address>
+              <!-- Accessibility - map added -->
+			  <div class="map">
+				<iframe
+				  class="map-frame"
+				  width="350"
+				  height="300"
+				  src="https://maps.google.com/maps?width=300&amp;height=350&amp;hl=en&amp;coord=45.7695133540645,4.830221633892507&amp;q=2%20place%20Sathonay%2069001%20Lyon+(D%C3%A9veloppeur%20Web)&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+				  aria-label="Carte Map : 2 place sathonay 69001 lyon"
+				></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- bloc-7 END -->
+
+      <!-- ScrollToTop Button -->
+      <a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"
+        ><span class="fa fa-chevron-up"></span
+      ></a>
+      <!-- ScrollToTop Button END-->
+
+      <!-- Footer - bloc-8 -->
+      <!-- HTML balise change -->
+      <footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+        <div class="container bloc-sm">
+          <div class="row">
+			<!-- Accessibility - aria-label added -->
+            <nav class="col-sm-12" aria-label="secondary">
+              <p class="text-center white">
+                La chouette agence - Agence web basée à Lyon.<br />
+              </p>
+              <div class="row row-no-gutters social">
+                <div class="col-sm-3">
+                  <div class="text-center">
+                    <!-- Best Practices - Target blank and rel noopener noreferrer -->
+                    <a class="social" href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter"
+                      ><span class="fab fa-twitter icon-md"></span
+                    ></a>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="text-center">
+                    <a class="social" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
+                      ><span class="fab fa-facebook icon-md"></span
+                    ></a>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="text-center">
+                    <a class="social" href="https://dribbble.com/" target="_blank" rel="noopener noreferrer" aria-label="Dribbble"
+                      ><span class="fa fab-dribbble icon-md"></span
+                    ></a>
+                  </div>
+                </div>
+                <div class="col-sm-3">
+                  <div class="text-center">
+                    <a class="social" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instragram"
+                      ><span class="fab fa-instagram icon-md"></span
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+	</footer>
+      <!-- Footer - bloc-8 END -->
+    </main>
+    <!-- Principal conteneur END -->
+  </body>
 </html>
