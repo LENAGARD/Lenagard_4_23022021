@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- Accessibility - Lang default ! -->
-<html lang="fr">
+<html lang="fr" itemscope itemtype="http://schema.org/WebPage">
   <head>
     <meta charset="utf-8" />
     <meta
@@ -30,7 +30,7 @@
       rel="publisher"
       href="https://lenagard.github.io/chouette_agence/index.html"
     />
-    <meta itemprop="name" content="La chouette agence" />
+    <meta itemprop="name" content="La chouette agence"/>
     <meta
       itemprop="description"
       content="Agence Web basée à Lyon – La chouette agence est une agence de webdesign qui aide les entreprises à devenir attractives et visibles sur internet."
@@ -39,7 +39,7 @@
       itemprop="image"
       content="https://lenagard.github.io/chouette_agence/img/la-chouette-agence.png"
     />
-
+    
     <!-- SEO - Open Graph -->
     <meta
       property="og:title"
@@ -109,8 +109,9 @@
   </head>
   <body>
     <!-- Principal conteneur -->
-    <!-- HTML balise change -->
-    <main class="page-container">
+    <div class="page-container">
+      <!-- Header added: bloc-0 => bloc-1 -->
+      <header>
       <!-- bloc-0 - navigation - Accessibility - aria-label added -->
       <div class="bloc bgc-white l-bloc" id="bloc-0" aria-label="primary">
         <div class="container bloc-sm">
@@ -160,10 +161,12 @@
         </div>
       </div>
       <!-- bloc-0 END -->
-
+    </header>
+    <!-- main added for bloc 1 => bloc 5 -->
+    <main>
       <!-- bloc-1-presentation -->
       <!-- HTML balise change -->
-      <section
+      <section>
         class="bloc bgc-dark-slate-blue bg-banniere d-bloc bg-t-edge bloc-bg-texture texture-paper b-parallax"
         id="bloc-1-hero"
       >
@@ -197,7 +200,7 @@
 
       <!-- bloc-2-services -->
       <!-- SEO - HTML balise change - Accessibility - aria-label added -->
-      <article class="bloc bgc-white l-bloc" id="bloc-2-services"aria-label="Services">
+      <article class="bloc bgc-white l-bloc" id="bloc-2-services" aria-label="Services">
         <div class="container bloc-md">
           <div class="row">
             <div class="col-sm-12 text-center">
@@ -270,7 +273,7 @@
 
       <!-- bloc-3-what-i-do -->
       <!-- SEO - HTML balise change - Accessibility - aria-label added -->
-      <section
+      <section>
         class="bloc tc-white bgc-atomic-tangerine bg-presentation d-bloc bloc-bg-texture texture-paper b-parallax"
         id="bloc-3-what-i-do" aria-label="Collaborer"
       >
@@ -296,8 +299,8 @@
               </p>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
       <!-- bloc-3-what-i-do END -->
 
       <!-- bloc-4-portfolio -->
@@ -427,11 +430,10 @@
         </div>
       </section>
       <!-- bloc-5-cta END -->
-
   <!-- ScrollToTop Button -->
   <a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
   <!-- ScrollToTop Button END-->
-
+    </main>
       <!-- Footer - bloc-8 -->
       <!-- SEO - HTML balise change - Accessibility - aria-label added -->
       <footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
@@ -479,7 +481,7 @@
         </div>
       </footer>
       <!-- Footer - bloc-8 END -->
-    </main>
+    </div>
     <!-- Principal conteneur END -->
   </body>
 </html>
