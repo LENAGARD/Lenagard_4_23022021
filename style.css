@@ -47,10 +47,9 @@ iframe {
   clear: both;
   background: 50% 50% no-repeat;
   padding: 0 50px;
-  /* Use Autoprefixer !!!!!!!!!!!!!!!!!!! to do  !!!!!!!!!!!!!!!!!!*/
-  /* -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   position: relative;
 }
@@ -82,11 +81,10 @@ iframe {
 .bg-tr-edge,
 .bg-br-edge,
 .bg-repeat {
-  /* Use Autoprefixer !!!!!!!!!!!!!!!!!!! to do  !!!!!!!!!!!!!!!!!!*/
-  /* -webkit-background-size: auto!important;
-    -moz-background-size: auto!important;
-    -o-background-size: auto!important; */
-  background-size: auto !important;
+ -webkit-background-size: auto!important;
+ -moz-background-size: auto!important;
+ -o-background-size: auto!important;
+ background-size: auto !important;
 }
 
 .bg-repeat {
